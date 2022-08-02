@@ -24,7 +24,7 @@ if __name__ == '__main__':
         variable
     )
     if value is None:
-        write_and_flush(sys.stderr, '{} could not be retrieved'.format(variable))
+        write_and_flush(sys.stderr, f'{variable} could not be retrieved')
         sys.exit(1)
 
     write_and_flush(sys.stdout, value)
